@@ -1,1 +1,9 @@
 # BEM VINDO AO MEUS ESTUDOS SOBRE FULL-STACK JS -
+
+<p>Aqui você encontra todas as tecnologias que estou estudei até o momento, durante o curso FullStack JavaScript</p>
+
+## Conteúdo 📚
+<ul>
+  <li><strong>HTML</strong></li>
+  <li>Processing...</li>
+</ul>
