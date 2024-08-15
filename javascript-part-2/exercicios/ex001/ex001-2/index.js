@@ -6,19 +6,22 @@ const cartas= [
 let escolha;
 
 do {
-
     escolha = parseInt(prompt(
         "Quantidade de cartas: " + cartas.length + 
         "\n\nEscolha uma das opções:\n" +
         "[1] - Puxar uma carta\n" +
-        "[2] - Adicionar um Carta ao Baralho\n" +
+        "[2] - Adicionar um carta ao baralho\n" +
         "[3] - Sair"
     ));
 
     switch(escolha) {
         case 1:
-            const cartaNaMao = cartas.shift();
-            alert("A carta em mãos é: " + cartaNaMao);
+            const cartaNaMao = cartas.pop();
+            if (!cartaNaMao) {
+                alert("Não há nenhuma carta no baralho")
+            } else {
+                alert("A carta em mãos é: " + cartaNaMao);
+            }
             break;
         case 2:
             const novaCarta = prompt(
@@ -34,7 +37,7 @@ do {
                 "[J] - J\n" +
                 "[K] - K\n"
             ).toUpperCase();
-            cartas.unshift(novaCarta);
+            cartas.pop(novaCarta);
             break;
         case 3:
             alert("Saindo...");

@@ -5,7 +5,7 @@ do {
 
     let list = "";
     for (let i = 0; i < pacientes.length; i++) {
-        list += (i+1) + "º " + pacientes[i] + " ";
+        list += (i+1) + "º - " + pacientes[i] + "\n";
     }
 
     if (list === "") {
@@ -31,7 +31,7 @@ do {
             }
             break;
         case 2:
-            const paciente = prompt("Qual o nome do paciente?");
+            const paciente = prompt("Qual é o nome do paciente?");
             pacientes.push(paciente);
             break;
         case 3:
