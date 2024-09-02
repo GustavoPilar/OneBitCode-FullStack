@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>REAL MADRUGA</h1>
+    </header>
+    <main>
+        <section id="escalar-time">
+            <h2>Escalar</h2>
+            <label for="nomeJogador">Nome do jogador:</label>
+            <input type="text" id="nomeJogador" name="nomeJogador" placeholder="Ex.: Neymar Jr" required>
+            <br>
+
+            <label for="numeroCamisa">Número da camisa:</label>
+            <input type="number" id="numeroCamisa" name="numeroCamisa" placeholder="Ex.: 11" required>
+            <br>
+
+            <label for="posicaoJogador">Posição do jogador:</label>
+            <input type="text" id="posicaoJogador" name="posicaoJogador" placeholder="Ex.: Ponta-Esquerda" required>
+            <br>
+
+            <div id="btns">
+                <button id="btn-escalar" onclick="escalar()">Escalar</button>
+                <button id="btn-remover" onclick="remover()">Remover</button>
+            </div>
+        </section>
+        <section id="time-escalado">
+            <h2>Jogadores</h2>
+            <section>
+                <ul id="jogadores-list"></ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 | Created by Gustavo Pilar</p>
+    </footer>
+
+</body>
+
+</html>
