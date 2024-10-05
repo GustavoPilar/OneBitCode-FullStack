@@ -20,9 +20,20 @@ document.getElementById('btn-jogar').addEventListener('click', function() {
     span.dataset.jogador = jogadores[0];
 });
 
+function desativar(quadrado) {
+    if (quadrado.dataset.valor != '') {
+        return true;
+    }
+}
+
 document.getElementById('linha1coluna1').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -30,6 +41,7 @@ document.getElementById('linha1coluna1').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -40,8 +52,13 @@ document.getElementById('linha1coluna1').addEventListener('click', function() {
 });
 
 document.getElementById('linha1coluna2').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -49,6 +66,7 @@ document.getElementById('linha1coluna2').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -59,8 +77,13 @@ document.getElementById('linha1coluna2').addEventListener('click', function() {
 });
 
 document.getElementById('linha1coluna3').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -68,6 +91,7 @@ document.getElementById('linha1coluna3').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -78,8 +102,13 @@ document.getElementById('linha1coluna3').addEventListener('click', function() {
 });
 
 document.getElementById('linha2coluna1').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
-        this.innerText = jogadores[0];
+        this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -87,6 +116,7 @@ document.getElementById('linha2coluna1').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -97,8 +127,13 @@ document.getElementById('linha2coluna1').addEventListener('click', function() {
 });
 
 document.getElementById('linha2coluna2').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -106,6 +141,7 @@ document.getElementById('linha2coluna2').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -116,8 +152,13 @@ document.getElementById('linha2coluna2').addEventListener('click', function() {
 });
 
 document.getElementById('linha2coluna3').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -125,6 +166,7 @@ document.getElementById('linha2coluna3').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -135,8 +177,13 @@ document.getElementById('linha2coluna3').addEventListener('click', function() {
 });
 
 document.getElementById('linha3coluna1').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -144,6 +191,7 @@ document.getElementById('linha3coluna1').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -154,8 +202,13 @@ document.getElementById('linha3coluna1').addEventListener('click', function() {
 });
 
 document.getElementById('linha3coluna2').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X'
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -163,6 +216,7 @@ document.getElementById('linha3coluna2').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
@@ -173,8 +227,13 @@ document.getElementById('linha3coluna2').addEventListener('click', function() {
 });
 
 document.getElementById('linha3coluna3').addEventListener('click', function() {
+    if (desativar(this)) {
+        return;
+    }
+    
     if (span.dataset.jogador === jogadores[0]) {
         this.innerText = 'X';
+        this.dataset.valor = 'X';
         this.style.backgroundColor = '#2e969f';
         span.innerText = jogadores[1];
         span.dataset.jogador = jogadores[1];
@@ -182,6 +241,8 @@ document.getElementById('linha3coluna3').addEventListener('click', function() {
     }
     else {
         this.innerText = 'O';
+        
+        this.dataset.valor = 'O';
         this.style.backgroundColor = '#a52d4f';
         span.innerText = jogadores[0];
         span.dataset.jogador = jogadores[0];
