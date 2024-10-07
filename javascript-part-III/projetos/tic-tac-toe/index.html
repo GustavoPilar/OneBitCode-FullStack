@@ -8,10 +8,6 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>TIC TAC TOE</h1>
-    </header>
-    <hr>
     <main>
         <div id="quadrado-principal">
             <div id="jogadores">
@@ -19,11 +15,13 @@
 
                 <input type="text" name="jogador2" id="jogador2" placeholder="Digite o nome...">
             </div>
-            <div id="botao-jogar">
+            <div id="buttons">
                 <button type="submit" id="btn-jogar">Jogar</button>
+                <button type="submit" id="btn-reiniciar">Reiniciar</button>
             </div>
-            <p id="preencher">Digite o nomes dos dois jogadores...</p>
+            <p id="preencher">JOGO DA VELHA #<br><br>Digite o nomes dos dois jogadores...</p>
             <p id="preenchido">Jogador: <span id="jogador" data-jogador=""></span></p>
+            <p id="game-over"><span id="vencedor"></span> ganhou!</p>
             <hr>
             <div id="quadrados-jogo">
                 <div id="linha1" class="dividir">
@@ -43,17 +41,6 @@
                 </div>
             </div>
         </div>
-        <div id="quadrado-fim">
-            <p>Parabéns <span id="vencedor"></span>!!</p>
-            <div id="resultado">
-                <p>Você ganhou!!</p>
-                <button id="restart" type="submit">Reiniciar</button>
-            </div>
-        </div>
     </main>
-    <hr>
-    <footer>
-
-    </footer>
 </body>
 </html>

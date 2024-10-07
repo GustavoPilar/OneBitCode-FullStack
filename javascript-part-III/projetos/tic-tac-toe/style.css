@@ -8,11 +8,6 @@
     text-align: center;
 }
 
-header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 #quadrado-principal {
     width: 80%;
     border: 1px solid black;
@@ -56,13 +51,17 @@ button[type='submit']:hover {
     cursor: pointer;
 }
 
+#btn-reiniciar {
+    display: none;
+}
+
 p {
     margin: 2rem auto;
     text-transform: uppercase;
 }
 
 #preencher {
-    background-color: #a52d4f;
+    background-color: #cd3661;
     padding: 1rem;
     border-radius: 1rem;
     display: block;
@@ -70,6 +69,10 @@ p {
 }
 
 #preenchido {
+    display: none;
+}
+
+#game-over {
     display: none;
 }
 
@@ -106,13 +109,4 @@ hr {
 .quadrados:hover {
     background-color: rgb(199, 199, 199);
     cursor: pointer;
-}
-
-#quadrado-fim {
-    display: none;
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 1.5rem;
-    margin: 2rem auto;
-    padding: 1rem;
 }

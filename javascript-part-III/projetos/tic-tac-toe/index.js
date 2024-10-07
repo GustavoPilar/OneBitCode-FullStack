@@ -1,6 +1,7 @@
 const jogadores = [];
 const jogo = [['', '', ''], ['', '', ''], ['', '', '']];
 const span = document.getElementById('jogador');
+let turno = document.getElementById('preenchido');
 
 document.getElementById('btn-jogar').addEventListener('click', function() {
     const jogador1 = document.getElementById('jogador1').value;
@@ -10,8 +11,11 @@ document.getElementById('btn-jogar').addEventListener('click', function() {
         return;
     }
 
+    document.getElementById('jogadores').style.display = 'none';
+    document.getElementById('btn-jogar').style.display = 'none';
     document.getElementById('preencher').style.display = 'none';
-    document.getElementById('preenchido').style.display = 'block';
+    document.getElementById('btn-reiniciar').style.display = 'inline';
+    turno.style.display = 'block';
     document.getElementById('quadrados-jogo').style.display = 'block';
     jogadores.push(jogador1);
     jogadores.push(jogador2);
@@ -285,12 +289,11 @@ function verificar() {
 }
 
 function terminar(vencedor) {
-    document.getElementById('quadrado-principal').style.display = 'none';
-    document.getElementById('quadrado-fim').style.display = 'block';
-
+    turno.style.display = 'none';
+    document.getElementById('game-over').style.display = 'block';
     document.getElementById('vencedor').innerText = vencedor;
 }
 
-document.getElementById('restart').addEventListener('click', function() {
+document.getElementById('btn-reiniciar').addEventListener('click', function() {
     location.reload();
 })
