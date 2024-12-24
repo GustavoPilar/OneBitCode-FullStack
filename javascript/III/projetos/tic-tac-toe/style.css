@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    text-align: center;
+}
+
+#quadrado-principal {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#jogadores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 2rem;
+    width: 33%;
+    text-transform: uppercase;
+}
+
+input:focus {
+    outline: none;
+}
+
+button[type='submit'] {
+    width: 30%;
+    height: 3rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: none;
+    background-color: #3580e1;
+    color: white;
+}
+
+button[type='submit']:hover {
+    background-color: #3b89f0;
+    cursor: pointer;
+}
+
+#btn-reiniciar {
+    display: none;
+}
+
+p {
+    margin: 2rem auto;
+    text-transform: uppercase;
+}
+
+#preencher {
+    background-color: #cd3661;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    width: 50%;
+}
+
+#preenchido {
+    display: none;
+}
+
+#game-over {
+    display: none;
+}
+
+hr {
+    border-radius: 50%;
+    margin: .5rem auto;
+}
+
+#quadrados-jogo {
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.dividir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrados {
+    height: 10rem;
+    width: 34%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.quadrados:hover {
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+}
