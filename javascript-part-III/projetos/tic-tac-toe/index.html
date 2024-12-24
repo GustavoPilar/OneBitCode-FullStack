@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha - Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="quadrado-principal">
+            <div id="jogadores">
+                <input type="text" name="jogador1" id="jogador1" placeholder="Digite o nome...">
+
+                <input type="text" name="jogador2" id="jogador2" placeholder="Digite o nome...">
+            </div>
+            <div id="buttons">
+                <button type="submit" id="btn-jogar">Jogar</button>
+                <button type="submit" id="btn-reiniciar">Reiniciar</button>
+            </div>
+            <p id="preencher">JOGO DA VELHA #<br><br>Digite o nomes dos dois jogadores...</p>
+            <p id="preenchido">Jogador: <span id="jogador" data-jogador=""></span></p>
+            <p id="game-over"><span id="vencedor"></span> ganhou!</p>
+            <hr>
+            <div id="quadrados-jogo">
+                <div id="linha1" class="dividir">
+                    <div id="linha1coluna1" class="quadrados" data-valor=""></div>
+                    <div id="linha1coluna2" class="quadrados" data-valor=""></div>
+                    <div id="linha1coluna3" class="quadrados" data-valor=""></div>
+                </div>
+                <div id="linha2" class="dividir">
+                    <div id="linha2coluna1" class="quadrados" data-valor=""></div>
+                    <div id="linha2coluna2" class="quadrados" data-valor=""></div>
+                    <div id="linha2coluna3" class="quadrados" data-valor=""></div>
+                </div>
+                <div id="linha3" class="dividir">
+                    <div id="linha3coluna1" class="quadrados" data-valor=""></div>
+                    <div id="linha3coluna2" class="quadrados" data-valor=""></div>
+                    <div id="linha3coluna3" class="quadrados" data-valor=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

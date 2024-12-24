@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Formulário de inscrição</title>
+</head>
+
+<body>
+    <h1>Formulário de inscrição</h1>
+
+    <hr>
+
+    <form action="#" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" name="nome" placeholder="Ex.:User" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Ex.:user@emai.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <br>
+            <input type="number" name="telefone" id="telefone" placeholder="Ex.:41998765432">
+        </div>
+        <br>
+        <div>
+            <label>Área de atuação:</label>
+            <br>
+            <input type="radio" name="area" id="desenvolvimento" required>
+            <label for="desenvolvimento">Desenvolvimento</label>
+
+            <input type="radio" name="area" id="qa" required>
+            <label for="qa">Quality Assurance (QA)</label>
+
+            <input type="radio" name="area" id="analiseDados" required>
+            <label for="analiseDados">Analise de Dados</label>
+
+            <input type="radio" name="area" id="infra" required>
+            <label for="infra">Infraestrutura</label>
+        </div>
+        <br>
+        <div>
+            <label for="obs">Observações:</label>
+            <br>
+            <textarea name="obs:" id="obs"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="emailNovidades" id="emailNovidades">
+            <label for="emailNovidades">Desejo receber novidades e o ofertas pelo email.</label>
+        </div>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
