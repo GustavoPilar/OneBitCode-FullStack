@@ -1,0 +1,359 @@
+/* Reset básico para garantir que não haja margens ou preenchimentos indesejados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os legendas dos fieldsets */
+fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Estilo para os fieldsets */
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus {
+    border-color: #5f9ea0;
+    outline: none;
+}
+
+button {
+    background-color: #5f9ea0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #4e8c8b;
+}
+
+button:active {
+    background-color: #3c7575;
+}
+
+#tech-list {
+    list-style-type: none;
+}
+
+#tech-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#tech-list li input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Estilo para os inputs radio */
+#tech-list li input[type="radio"] {
+    display: none; /* Esconde o input radio original */
+}
+
+#tech-list li label {
+    position: relative;
+    padding-left: 30px; /* Espaço para o círculo customizado */
+    cursor: pointer;
+    font-size: 1rem;
+    color: #444;
+}
+
+#tech-list li input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5f9ea0; /* Cor da borda do círculo */
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#tech-list li input[type="radio"]:checked + label::before {
+    background-color: #5f9ea0; /* Cor do círculo quando selecionado */
+    border-color: #4e8c8b; /* Cor da borda quando selecionado */
+}
+
+#tech-list li input[type="radio"]:checked + label {
+    color: #5f9ea0; /* Muda a cor do texto quando selecionado */
+}
+
+#tech-list li label:hover::before {
+    border-color: #4e8c8b; /* Mudança de cor da borda ao passar o mouse */
+}
+
+#tech-list li label:active::before {
+    background-color: #4e8c8b; /* Mudança de cor quando pressionado */
+    border-color: #4e8c8b;
+}
+
+
+#tech-list li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    border-radius: 4px;
+}
+
+#tech-list li button:hover {
+    background-color: #c9302c;
+}
+
+#fieldsetDevs {
+    display: none;
+    margin-top: 40px;
+}
+
+#dev-list {
+    list-style-type: none;
+}
+
+/* Estilo para o container do desenvolvedor */
+#dev-list fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o legend do desenvolvedor */
+#dev-list fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a lista de tecnologias */
+#dev-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Estilo para os itens da lista de tecnologias dentro de cada desenvolvedor */
+#dev-list li {
+    background-color: #fff;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a descrição da tecnologia e experiência */
+#dev-list li .tech-info {
+    color: #333;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+/* Estilo para o tempo de experiência */
+#dev-list li .experience-info {
+    color: #5f9ea0;
+    font-style: italic;
+}
+
+/* Estilo para os fieldsets de desenvolvedor */
+#dev-list fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o legend do desenvolvedor */
+#dev-list fieldset legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries para versões móveis */
+
+/* Versão Mobile para telas até 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    #tech-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #tech-list li input[type="text"] {
+        margin-bottom: 10px;
+    }
+
+    #dev-list fieldset {
+        padding: 10px;
+    }
+
+    #dev-list li {
+        font-size: 0.9rem;
+    }
+
+    #dev-list li button {
+        padding: 5px 8px;
+    }
+
+    #tech-list li button {
+        padding: 5px 10px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Versão Mobile para telas menores que 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    fieldset {
+        padding: 8px;
+    }
+
+    form label {
+        font-size: 0.85rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    button {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    #tech-list li {
+        margin-bottom: 8px;
+    }
+
+    #dev-list fieldset {
+        padding: 8px;
+    }
+
+    #dev-list li {
+        font-size: 0.85rem;
+    }
+
+    #dev-list li button {
+        padding: 4px 8px;
+    }
+
+    #tech-list li button {
+        margin-top: 8px;
+        padding: 4px 8px;
+    }
+}
+

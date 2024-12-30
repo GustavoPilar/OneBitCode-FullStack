@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Devs</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cadastro de Devs</h1>
-    <hr>
-    <form id="devForm">
-        <fieldset>
-            <legend>Formulário para Cadastro</legend>
+
+    <header>
+        <h1>Cadastro de Devs</h1>
+    </header>
+
+    <main>
+        <form id="devForm">
             <fieldset>
-                <legend>Dados Pessoais</legend>
-                <label for="name">Nome do Desenvolvedor:</label>
-                <input type="text" name="name" id="name" placeholder="Ex.: João Paulo">
-                <br><br>
-        
-                <label for="email">E-mail do Desenvolvedor:</label>
-                <input type="email" name="email" id="email" placeholder="Ex.: dev@email.com">
-                <br><br>
-        
-                <label for="phone">Telefone para Contato:</label>
-                <input type="number" name="phone" id="phone" placeholder="Ex.: 4199999999">
-
-                <br><br>
-                <button id="addTechBtn">Adicionar Tecnologias</button>
-                <button id="signBtn">Cadastrar</button>
+                <legend>Formulário para Cadastro</legend>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">Nome do Desenvolvedor:</label>
+                    <input type="text" name="name" id="name" placeholder="Ex.: João Paulo">
+                    <br><br>
+            
+                    <label for="email">E-mail do Desenvolvedor:</label>
+                    <input type="email" name="email" id="email" placeholder="Ex.: dev@email.com">
+                    <br><br>
+            
+                    <label for="phone">Telefone para Contato:</label>
+                    <input type="number" name="phone" id="phone" placeholder="Ex.: 4199999999">
+    
+                    <br><br>
+                    <button id="addTechBtn">Adicionar Tecnologias</button>
+                    <button id="signBtn">Cadastrar</button>
+                </fieldset>
+                <fieldset id="fieldsetInputsTech">
+                    <legend>Tecnologias</legend>
+                    <ul id="tech-list">
+                        
+                    </ul>
+                </fieldset>
             </fieldset>
-            <fieldset id="fieldsetInputsTech">
-                <legend>Tecnologias</legend>
-                <ul id="tech-list"></ul>
-            </fieldset>
+        </form>
+    
+        <fieldset style="display: block;" id="fieldsetDevs">
+            <legend>Desenvolvedores</legend>
+            <ul id="dev-list">
+                
+            </ul>
         </fieldset>
-    </form>
-
-    <fieldset style="display: none" id="fieldsetDevs">
-        <legend>Desenvolvedores</legend>
-        <ul id="dev-list"></ul>
-    </fieldset>
+    </main>
 </body>
 </html>

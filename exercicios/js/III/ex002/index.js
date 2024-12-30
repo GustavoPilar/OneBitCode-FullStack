@@ -84,7 +84,7 @@ sign.addEventListener('click', function(ev) {
     dev.name = document.getElementById('name').value;
     dev.email = document.getElementById('email').value;
     dev.phone = document.getElementById('phone').value;
-    const devData = 'Desenvolvedor: ' + dev.name + ' - ' + dev.email + ' - ' + dev.phone;
+    const devData = dev.name;
 
     const fieldset = document.createElement('fieldset');
     fieldset.id = dev.name;
@@ -115,14 +115,20 @@ sign.addEventListener('click', function(ev) {
 
         newLi.id = 'tech' + i + '-' + dev.name;
         const techString = technology.type + ' - ' + technology.experienceTime;
-        newLi.append(techString);
+        const divInfo = document.createElement('div');
+        divInfo.className = 'tech-info';
+        divInfo.textContent = technology.type;
+        const divExp = document.createElement('div');
+        divExp.className = 'experience-info';
+        divExp.textContent = technology.experienceTime;
+        newLi.append(divInfo, divExp);
 
         newUl.append(newLi);
     }
 
     fieldset.append(legend, newUl);
     devList.append(fieldset);
-    document.getElementById('fieldsetDevs').removeAttribute('style');
+    document.getElementById('fieldsetDevs').style.display = 'block'; 
 
 
     dev = {
